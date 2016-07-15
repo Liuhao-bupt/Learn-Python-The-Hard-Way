@@ -17,3 +17,4 @@ else:
 a = raw_input('>') 输入12
 b = int(a)
 b->int,a->str
+还有python中的逻辑运算符是or和and都是英文
