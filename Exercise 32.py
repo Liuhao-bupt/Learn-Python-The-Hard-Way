@@ -87,3 +87,10 @@ print A--->[3,2,1]
 A = [1, 2, 3]
 B = A.reverse()
 print B  ---->none   reverse函数不返回值
+
+
+extend 用新列表扩展原来的列表
+A = [1, 2, 3]
+B = [4, 5, 6]
+A.extend(B)
+print A -->[1,2,3,4,5,6]
