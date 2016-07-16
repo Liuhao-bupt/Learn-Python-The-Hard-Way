@@ -66,18 +66,25 @@ def start():
     else:
         dead("You stumble around the room until you starve.")
 
-
 def isanumber(c):
     b = []
     for i in range(0, 10):
         b.append(str(i))
+    b.append('.')
     for j in c:
         if j not in b:
             return False
-    return True
-
+    if c.count('.') == 1 and c[0] != '.':
+        return True
+    elif c.count('.') == 0:
+        return True
+    else:
+        return False
 
 start()
+
+
+
 ##
 exit(0) 无错误退出
 exit(1) 有错误退出
